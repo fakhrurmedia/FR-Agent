@@ -61,10 +61,10 @@
         }
         .feature-list li {
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Align items to the start for better wrapping */
         }
-        .feature-list .icon-check { color: #22c55e; margin-right: 0.75rem; flex-shrink: 0; }
-        .feature-list .icon-cross { color: #ef4444; margin-right: 0.75rem; flex-shrink: 0; }
+        .feature-list .icon-check { color: #22c55e; margin-right: 0.75rem; flex-shrink: 0; margin-top: 4px; }
+        .feature-list .icon-cross { color: #ef4444; margin-right: 0.75rem; flex-shrink: 0; margin-top: 4px;}
     </style>
 </head>
 <body class="bg-custom-dark text-custom-light">
@@ -89,23 +89,23 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
-             <a href="#services" class="block hover:text-blue-400 transition-colors">Layanan</a>
-             <a href="#how-it-works" class="block hover:text-blue-400 transition-colors">Cara Kerja</a>
-             <a href="#pricing" class="block hover:text-blue-400 transition-colors">Investasi</a>
+             <a href="#services" class="block py-2 hover:text-blue-400 transition-colors">Layanan</a>
+             <a href="#how-it-works" class="block py-2 hover:text-blue-400 transition-colors">Cara Kerja</a>
+             <a href="#pricing" class="block py-2 hover:text-blue-400 transition-colors">Investasi</a>
              <a href="#" class="whatsapp-link block btn-primary font-bold py-2 px-4 rounded-lg transition-colors mt-2 text-center">Hubungi Kami</a>
         </div>
     </header>
 
     <!-- Hero Section -->
     <main class="container mx-auto px-6 py-20 md:py-32 text-center">
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
             Fokus Pada Bisnis Anda, <br class="hidden md:block"> Biarkan <span class="gradient-text">Kami yang Mengurus AI</span>
         </h1>
         <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-custom-dim">
             FR Agent adalah partner strategis Anda dalam otomatisasi customer service. Kami mengelola semua kerumitan teknis AI, sehingga Anda bisa fokus pada pertumbuhan bisnis.
         </p>
         <div class="mt-10">
-            <a href="#pricing" class="btn-primary font-bold py-4 px-8 rounded-lg text-lg transition-colors">Lihat Paket Layanan</a>
+            <a href="#pricing" class="btn-primary font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-base sm:text-lg transition-colors">Lihat Paket Layanan</a>
         </div>
     </main>
 
@@ -114,7 +114,7 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold">Solusi Lengkap, Hasil Nyata</h2>
-                <p class="mt-4 text-custom-dim">Kami tidak hanya menyediakan teknologi, kami mengelola hasil.</p>
+                <p class="mt-4 text-custom-dim max-w-2xl mx-auto">Kami tidak hanya menyediakan teknologi, kami mengelola hasil untuk Anda.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
@@ -141,23 +141,23 @@
         <div class="container mx-auto px-6">
              <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold">Sangat Mudah untuk Memulai</h2>
-                <p class="mt-4 text-custom-dim">Hanya dalam 3 langkah, perusahaan Anda siap didukung AI.</p>
+                <p class="mt-4 text-custom-dim max-w-2xl mx-auto">Hanya dalam 3 langkah sederhana, perusahaan Anda siap didukung oleh AI.</p>
             </div>
-            <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-12 md:gap-8 text-center">
                  <!-- Step 1 -->
                  <div class="flex flex-col items-center">
-                    <div class="bg-blue-500/10 text-blue-400 w-16 h-16 rounded-full flex items-center justify-center font-bold text-2xl mb-4">1</div>
+                    <div class="bg-blue-500/10 text-blue-400 w-16 h-16 rounded-full flex items-center justify-center font-bold text-2xl mb-4 flex-shrink-0">1</div>
                     <h4 class="font-bold text-lg text-custom-light">Konsultasi</h4>
                     <p class="text-custom-dim mt-2">Diskusikan kebutuhan bisnis dan tantangan layanan pelanggan Anda dengan kami.</p>
                 </div>
                 <!-- Step 2 -->
                 <div class="flex flex-col items-center">
-                    <div class="bg-blue-500/10 text-blue-400 w-16 h-16 rounded-full flex items-center justify-center font-bold text-2xl mb-4">2</div>
+                    <div class="bg-blue-500/10 text-blue-400 w-16 h-16 rounded-full flex items-center justify-center font-bold text-2xl mb-4 flex-shrink-0">2</div>
                     <div><h4 class="font-bold text-lg text-custom-light">Kami Bekerja</h4><p class="text-custom-dim mt-2">Tim FR Agent akan membangun, melatih, dan mengintegrasikan AI Agent khusus untuk Anda.</p></div>
                 </div>
                  <!-- Step 3 -->
                  <div class="flex flex-col items-center">
-                    <div class="bg-blue-500/10 text-blue-400 w-16 h-16 rounded-full flex items-center justify-center font-bold text-2xl mb-4">3</div>
+                    <div class="bg-blue-500/10 text-blue-400 w-16 h-16 rounded-full flex items-center justify-center font-bold text-2xl mb-4 flex-shrink-0">3</div>
                     <div><h4 class="font-bold text-lg text-custom-light">Nikmati Hasilnya</h4><p class="text-custom-dim mt-2">AI Agent aktif dan siap melayani pelanggan Anda 24/7. Anda tidak perlu pusing!</p></div>
                 </div>
             </div>
@@ -169,15 +169,15 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold">Paket Investasi</h2>
-                <p class="mt-4 text-custom-dim">Pilih solusi yang paling sesuai dengan skala dan tujuan bisnis Anda.</p>
+                <p class="mt-4 text-custom-dim max-w-2xl mx-auto">Pilih solusi yang paling sesuai dengan skala dan tujuan bisnis Anda.</p>
             </div>
             <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
                 <!-- Starter Package -->
-                <div class="pricing-card p-8 rounded-xl flex flex-col">
+                <div class="pricing-card p-6 sm:p-8 rounded-xl flex flex-col">
                     <h3 class="text-2xl font-bold">Paket Starter</h3>
                     <p class="mt-2 text-custom-dim">Untuk Memulai & Membuktikan Nilai</p>
-                    <p class="text-4xl font-bold my-6">Rp 1.900.000<span class="text-xl font-medium text-custom-dim">/bulan</span></p>
-                    <ul class="space-y-4 text-custom-light flex-grow feature-list">
+                    <p class="text-4xl font-bold my-6">Rp 1.9jt<span class="text-xl font-medium text-custom-dim">/bln</span></p>
+                    <ul class="space-y-4 text-custom-light flex-grow feature-list text-left">
                         <li><span class="icon-check">✓</span>Biaya Lisensi Platform AI</li>
                         <li><span class="icon-check">✓</span>Setup & Integrasi Awal</li>
                         <li><span class="icon-check">✓</span>Kustomisasi Persona AI</li>
@@ -190,12 +190,12 @@
                 </div>
 
                 <!-- Business Package (Most Popular) -->
-                <div class="pricing-card popular p-8 rounded-xl flex flex-col">
-                    <div class="absolute top-0 right-8 -mt-4 bg-indigo-500 text-white text-sm font-bold px-4 py-1 rounded-full">Paling Populer</div>
+                <div class="pricing-card popular p-6 sm:p-8 rounded-xl flex flex-col">
+                    <div class="absolute top-0 right-4 sm:right-8 -mt-4 bg-indigo-500 text-white text-sm font-bold px-4 py-1 rounded-full">Paling Populer</div>
                     <h3 class="text-2xl font-bold">Paket Bisnis</h3>
                     <p class="mt-2 text-custom-dim">Solusi Lengkap untuk Pertumbuhan</p>
-                    <p class="text-4xl font-bold my-6">Rp 3.500.000<span class="text-xl font-medium text-custom-dim">/bulan</span></p>
-                    <ul class="space-y-4 text-custom-light flex-grow feature-list">
+                    <p class="text-4xl font-bold my-6">Rp 3.5jt<span class="text-xl font-medium text-custom-dim">/bln</span></p>
+                    <ul class="space-y-4 text-custom-light flex-grow feature-list text-left">
                         <li><span class="icon-check">✓</span>Semua di Paket Starter, ditambah:</li>
                         <li><span class="icon-check">✓</span>Knowledge Base (Hingga 150 Pertanyaan)</li>
                         <li><span class="icon-check">✓</span>Pembaruan Knowledge Base (1x per bulan)</li>
@@ -206,11 +206,11 @@
                 </div>
 
                 <!-- Pro Package -->
-                <div class="pricing-card p-8 rounded-xl flex flex-col">
+                <div class="pricing-card p-6 sm:p-8 rounded-xl flex flex-col">
                     <h3 class="text-2xl font-bold">Paket Pro</h3>
-                    <p class="mt-2 text-custom-dim">Untuk Kemitraan Strategis & Performa Maksimal</p>
+                    <p class="mt-2 text-custom-dim">Kemitraan Strategis & Performa Maksimal</p>
                     <p class="text-4xl font-bold my-6">Hubungi Kami</p>
-                    <ul class="space-y-4 text-custom-light flex-grow feature-list">
+                    <ul class="space-y-4 text-custom-light flex-grow feature-list text-left">
                         <li><span class="icon-check">✓</span>Semua di Paket Bisnis, ditambah:</li>
                         <li><span class="icon-check">✓</span>Knowledge Base (Unlimited)</li>
                         <li><span class="icon-check">✓</span>Laporan Analitik Mendalam + Ringkasan Mingguan</li>
@@ -231,7 +231,7 @@
             <h2 class="text-3xl md:text-4xl font-bold">Siap Mengubah Layanan Pelanggan Anda?</h2>
             <p class="mt-4 text-custom-dim max-w-2xl mx-auto">Lebih efisien daripada merekrut staf baru. Hubungi kami untuk konsultasi gratis dan lihat bagaimana kami bisa membantu bisnis Anda bertumbuh.</p>
             <div class="mt-8">
-                 <a href="#" class="whatsapp-link btn-primary font-bold py-4 px-8 rounded-lg text-lg transition-colors">Jadwalkan Konsultasi Gratis</a>
+                 <a href="#" class="whatsapp-link btn-primary font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-base sm:text-lg transition-colors">Jadwalkan Konsultasi Gratis</a>
             </div>
         </div>
     </section>
@@ -241,9 +241,9 @@
         <div class="container mx-auto px-6 text-center text-gray-500">
             <p class="font-bold text-lg text-custom-light">FR<span class="gradient-text">Agent</span></p>
             <p class="mt-2">Partner Strategis Anda dalam Otomatisasi Customer Service</p>
-            <div class="mt-4 flex justify-center items-center gap-4">
+            <div class="mt-4 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
                 <a href="#" class="whatsapp-link hover:text-blue-400">WhatsApp</a>
-                <span>&middot;</span>
+                <span class="hidden sm:inline">&middot;</span>
                 <span id="email-text" class="cursor-pointer hover:text-blue-400">kontak@fragent.site</span>
             </div>
             <p class="mt-6 text-sm">&copy; 2025 FR Agent. Semua Hak Cipta Dilindungi.</p>
@@ -262,9 +262,11 @@
         });
         
         // Close mobile menu on link click
-        document.querySelectorAll('#mobile-menu a').forEach(anchor => {
+        document.querySelectorAll('#mobile-menu a, .whatsapp-link').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                mobileMenu.classList.add('hidden');
+                if (this.getAttribute('href').startsWith('#')) {
+                    mobileMenu.classList.add('hidden');
+                }
             });
         });
 
